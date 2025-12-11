@@ -1,0 +1,18 @@
+// {{ project_name }} content script
+// {{ description }}
+// Generated with {{ template_name }} in {{ year }} by {{ author }}
+
+(function() {
+  const banner = document.createElement('div');
+  banner.textContent = 'AGF generated extension active: {{ project_slug }}';
+  banner.style.position = 'fixed';
+  banner.style.bottom = '1rem';
+  banner.style.right = '1rem';
+  banner.style.padding = '0.75rem 1rem';
+  banner.style.background = '#111';
+  banner.style.color = '#fff';
+  banner.style.zIndex = 9999;
+  banner.style.boxShadow = '0 2px 8px rgba(0,0,0,0.3)';
+  document.body.appendChild(banner);
+  console.log('AGF extension says hello from {{ project_name }}');
+})();

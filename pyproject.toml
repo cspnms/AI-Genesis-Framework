@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=65", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-genesis-framework"
+version = "0.1.0"
+description = "AI Genesis Framework (AGF): self-expanding, self-documenting project generator"
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [
+  {name = "AI Genesis Team", email = "opensource@example.com"}
+]
+requires-python = ">=3.10"
+dependencies = [
+  "click>=8.1",
+  "jinja2>=3.1",
+  "pyyaml>=6.0",
+  "rich>=13.0"
+]
+keywords = ["scaffolding", "templates", "cli", "ai"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12"
+]
+
+[project.urls]
+Homepage = "https://example.com/ai-genesis-framework"
+Repository = "https://example.com/ai-genesis-framework"
+
+[project.scripts]
+agf = "agf.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["agf*"]
+
+[tool.setuptools.package-data]
+"agf" = ["templates/**/*.j2", "templates/**/template_meta.json"]
+
+[tool.hatch.build]
+include = ["agf", "docs", "examples", "scripts", "README.md", "LICENSE"]
