@@ -1,0 +1,8 @@
+{
+  "name": "python_cli_basic",
+  "label": "Python CLI Basic",
+  "description": "Minimal Click-based Python CLI with README",
+  "language": "python",
+  "type": "python-cli",
+  "variables": ["project_name", "project_slug", "description", "author", "year", "template_name"]
+}

@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Chrome Extension Hello",
+  "version": "0.1.0",
+  "description": "Example extension that shows a banner",
+  "author": "Your Name",
+  "action": {
+    "default_title": "Chrome Extension Hello"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}

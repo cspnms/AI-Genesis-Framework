@@ -1,0 +1,8 @@
+{
+  "name": "chrome_extension_basic",
+  "label": "Chrome Extension Basic",
+  "description": "Minimal Manifest V3 extension with content script",
+  "language": "javascript",
+  "type": "chrome-extension",
+  "variables": ["project_name", "project_slug", "description", "author", "year", "template_name"]
+}
